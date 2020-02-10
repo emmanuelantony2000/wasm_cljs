@@ -3,16 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Fib</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="app">
+    <div class="container">
+      <h1 style="text-align: center;">Fibonacci Numbers</h1>
+
+      <div class="card" style="text-align: center;">
+        <div class="card-body">
+          <h4 class="card-title">Try out cljs</h5>
+          <p class="card-text" id="app"></p>
+        </div>
+      </div>
+      <br>
+      <div class="card" style="text-align: center;">
+        <div class="card-body">
+          <h4 class="card-title">Try out wasm</h5>
+          <p class="card-text">
+            <div class="text" id="wasm_text">1</div>
+    <input id="wasm_but" type="button" value="0" class="btn btn-primary btn-lg btn-block"></input>
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="card" style="text-align: center;">
+        <div class="card-body">
+          <h4 class="card-title">Try out js</h5>
+          <p class="card-text">
+            <div class="text" id="js_text">1</div>
+    <input id="js_but" type="button" value="0" class="btn btn-primary btn-lg btn-block"></input>
+          </p>
+        </div>
+      </div>
     </div>
-    <p>Click here to try out cljs.</p>
-    <br>
-    <div id="wasm-text">1</div>
-    <input id="wasm_but" type="button" value="0"></input>
-    <p>Click here to try out wasm.</p>
     <script src="target/client.js"></script>
     <script>
       simpleexample.core.run();

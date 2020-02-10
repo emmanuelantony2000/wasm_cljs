@@ -175,7 +175,6 @@ cljs.core.cst$sym$str = new cljs.core.Symbol(null,"str","str",-1564826950,null);
 cljs.core.cst$sym$next = new cljs.core.Symbol(null,"next","next",1522830042,null);
 cljs.core.cst$sym$nodes = new cljs.core.Symbol(null,"nodes","nodes",-459054278,null);
 cljs.core.cst$sym$seen = new cljs.core.Symbol(null,"seen","seen",1121531738,null);
-cljs.core.cst$kw$h1 = new cljs.core.Keyword(null,"h1","h1",-1896887462);
 cljs.core.cst$sym$hash_DASH_map = new cljs.core.Symbol(null,"hash-map","hash-map",-439030950,null);
 cljs.core.cst$kw$autobind = new cljs.core.Keyword(null,"autobind","autobind",-570650245);
 cljs.core.cst$sym$catch = new cljs.core.Symbol(null,"catch","catch",-1616370245,null);

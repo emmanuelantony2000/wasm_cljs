@@ -1,6 +1,8 @@
-function fib_wasm() {fetch('./main.wasm').then(response =>
-    response.arrayBuffer()
-  ).then(bytes => WebAssembly.instantiate(bytes)).then(results => {
+var main_wasm = fetch('./main.wasm').then(response =>
+  response.arrayBuffer()
+).then(bytes => WebAssembly.instantiate(bytes));
+
+function fib_wasm() {main_wasm.then(results => {
     instance = results.instance;
     document.getElementById("wasm_text").textContent = instance.exports.fib_wasm(document.getElementById("wasm_but").value);
   }).catch(console.error);

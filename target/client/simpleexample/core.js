@@ -9,14 +9,14 @@ if((typeof simpleexample !== 'undefined') && (typeof simpleexample.core !== 'und
 simpleexample.core.click_count = reagent.core.atom.cljs$core$IFn$_invoke$arity$1((0));
 }
 simpleexample.core.fib = (function simpleexample$core$fib(n){
-if(((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(n,(1))) || (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(n,(0))))){
-return (1);
-} else {
+if((n > (1))){
 return ((function (){var G__6329 = (n - (1));
 return (simpleexample.core.fib.cljs$core$IFn$_invoke$arity$1 ? simpleexample.core.fib.cljs$core$IFn$_invoke$arity$1(G__6329) : simpleexample.core.fib.call(null,G__6329));
 })() + (function (){var G__6330 = (n - (2));
 return (simpleexample.core.fib.cljs$core$IFn$_invoke$arity$1 ? simpleexample.core.fib.cljs$core$IFn$_invoke$arity$1(G__6330) : simpleexample.core.fib.call(null,G__6330));
 })());
+} else {
+return (1);
 }
 });
 simpleexample.core.click_text = (function simpleexample$core$click_text(){

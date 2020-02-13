@@ -5,7 +5,9 @@
 (defonce click-count (r/atom 0))
 
 (defn fib [n]
-  (if (or (= n 1) (= n 0)) 1 (+ (fib (- n 1)) (fib (- n 2)))))
+  (if (> n 1)
+    (+ (fib (dec n)) (fib (- n 2)))
+    1))
 
 (defn click_text []
   [:div {:id "fib_clj"
